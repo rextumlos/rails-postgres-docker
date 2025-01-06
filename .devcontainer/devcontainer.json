@@ -19,7 +19,10 @@
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"features": {
 		"ghcr.io/devcontainers/features/ruby:1": {}
-	}
+	},
+	"mounts": [
+	  "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+	]
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
